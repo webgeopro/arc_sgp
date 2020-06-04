@@ -1,0 +1,9 @@
+<?php
+/**
+ * Модальное окно для Главной страницы.
+ * Отработка клшика по "Закажите звонок"
+ *
+ * User: Vah
+ * Date: 29.06.2015
+ */
+?> <!--########### BEGIN :: MODAL ##########--><div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog modal-sm"><form class="form-inline" role="form" id="_form1" method="post" action="/spasibo"><input type="hidden" name="action" value="Request a call. Block 'How we work'"> <input type="hidden" name="page" value="index"> <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>"><div class="modal-header"><span type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></span><h4 class="modal-title" id="myModalLabel">Заказать звонок</h4></div><div class="modal-body"><div class="input-group col-md-12" style="margin-bottom: 10px;"><span class="input-group-addon"><i class="fa fa-user fa-lg"></i></span> <input type="text" class="form-control" name="name" id="form1Name" placeholder="Ваш имя"></div><div class="input-group col-md-12"><span class="input-group-addon"><i class="fa fa-phone fa-lg"></i></span> <input type="text" class="form-control required" name="contact" id="val_form1" placeholder="Ваш номер телефона"></div><p class="text-info">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p></div><div class="modal-footer"><button type="submit" class="btn btn-primary btnCallback_" id="form1">Заказать звонок</button> <button type="button" class="btn btn-default" data-dismiss="modal" id="form1Close">Закрыть</button></div></form></div></div><!--########### END :: MODAL ##########-->

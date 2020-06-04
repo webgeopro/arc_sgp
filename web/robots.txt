@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /spasibo
+Host: sibgeopro.ru
+Sitemap: http://sibgeopro.ru/sitemap.xml
+
+User-agent: Yandex
+Allow: /
+Disallow: /spasibo
